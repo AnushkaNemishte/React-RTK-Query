@@ -3,7 +3,45 @@
         {
             "id":1,
             "name":"Anushka",
-            "email":"anushka@gmail.com"
+            "email":"anushka@gmail.com",
+            "contact":1234567895
+        },
+        {
+            "id":2,
+            "name":"Anuja",
+            "email":"anuja@gmail.com",
+            "contact":7418529634
+        },
+        {
+            "id":3,
+            "name":"Rashi",
+            "email":"rashi@gmail.com",
+            "contact":7458529634
+        },
+        {
+            "id":4,
+            "name":"Depti",
+            "email":"depti@gmail.com",
+            "contact":7452529634
+        },
+        {
+            "id":5,
+            "name":"Rahul",
+            "email":"rahul@gmail.com",
+            "contact":7218529634
+        },
+        {
+            "id":6,
+            "name":"Sunny",
+            "email":"sunny@gmail.com",
+            "contact":7458529634
+        },
+        {
+            "id":7,
+            "name":"Nisha",
+            "email":"nisha@gmail.com",
+            "contact":7418529634
         }
+
     ]
 }
