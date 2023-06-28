@@ -1,5 +1,14 @@
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.custom-padding {
+  padding: 15px;
+}
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
