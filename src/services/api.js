@@ -5,19 +5,20 @@ export const api = createApi({
     baseQuery:fetchBaseQuery({
         baseUrl:"http://localhost:3001/"
     }),
-    tagTypes:["Users"],
+    tagTypes:['User'],
     endpoints:(builder)=>({
         getUser:builder.query({
             query:()=>({
                 url:"users",
                 method:'GET',
-                providesTags: ['Users']
+                providesTags: ['User']
             })
         }),
         getUserById:builder.query({
             query:(id)=>({
                 url:`users/${id}`,
-                method:'GET'
+                method:'GET',
+                providesTags:['User']
             })
         }),
         addUser:builder.mutation({
@@ -26,20 +27,22 @@ export const api = createApi({
                 method:"POST",
                 body:newPost
             }),
-            invalidatesTags:["Users"]
+            invalidatesTags:['User']
         }),
         updateUser:builder.mutation({
             query:(updateUser)=>({
                 url:`users/${updateUser.id}`,
                 method:"PUT",
                 body:updateUser
-            })
+            }),
+            invalidatesTags:['User']
         }),
         deleteUser:builder.mutation({
             query:(id)=>({
                 url:`users/${id}`,
                 method:"DELETE"
-            })
+            }),
+            invalidatesTags:['User' ]
         })
     })
 })
