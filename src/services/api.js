@@ -10,9 +10,9 @@ export const api = createApi({
         getUser:builder.query({
             query:()=>({
                 url:"users",
-                method:'GET',
-                providesTags: ['User']
-            })
+                
+            }),
+            providesTags: ['User']
         }),
         getUserById:builder.query({
             query:(id)=>({
