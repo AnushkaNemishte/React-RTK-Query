@@ -24,4 +24,6 @@
 .error{
   color: red;
 }
-
+.Toastify__toast--custom-toast-error {
+  color: #150101;
+}

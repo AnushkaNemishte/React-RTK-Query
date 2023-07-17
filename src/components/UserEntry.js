@@ -4,7 +4,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { Button, Modal } from "react-bootstrap";
 import TextError from "./TextError";
 import { useAddUserMutation, useGetUserByIdQuery, useUpdateUserMutation } from "../services/api";
-
+import {toast} from 'react-toastify'
 function UserEntry({ show, onClose ,id}) {
     const[addUser]=useAddUserMutation()
     const {data:UserById}=useGetUserByIdQuery(id)
@@ -29,10 +29,12 @@ function UserEntry({ show, onClose ,id}) {
     if(edit)
     {
       updateUser(values)
+      toast.success("User Updated Successfully")
       onClose()
     }
     else{
       addUser(values)
+      toast.success("User Added Successfully...")
       onClose()
     }
    
